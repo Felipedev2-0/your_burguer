@@ -1,6 +1,5 @@
 <template>
     <div>
-        <p>Componente de Mensagem</p>
         <div>
             <form id="burger-form">
                 <div class="input-container">
