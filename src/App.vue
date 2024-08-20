@@ -2,7 +2,9 @@
   <div class="app-container">
     <NavBar :logo="logo_src" :alt="app_name"/>
     <div class="main-content">
-      <router-view/>
+      <transition name="zoom-fade">
+        <router-view :key="$route.fullPath"/>
+    </transition>
     </div>
     <Footer/>
   </div>
@@ -49,5 +51,14 @@ h1{
   font-size: 42px;
   margin-bottom: 30px;
   color: #222;
+}
+
+/* Efeito de zoom */
+.zoom-fade-enter-active, .zoom-fade-leave-active {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.zoom-fade-enter, .zoom-fade-leave-to /* .zoom-fade-leave-active em <2.1.8 */ {
+  transform: scale(0.9);
+  opacity: 0;
 }
 </style>
