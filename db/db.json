@@ -69,15 +69,15 @@
   },
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "tipo": "Solicitado"
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo": "Em produção"
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo": "Finalizado"
     }
   ],
@@ -113,6 +113,27 @@
         "Salame",
         "Bacon",
         "Pepino"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "d799",
+      "nome": "arthur",
+      "carne": "Maminha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Salame",
+        "Bacon"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "eee1",
+      "nome": "arthur",
+      "carne": "Picanha",
+      "pao": "Integral",
+      "opcionais": [
+        "Bacon"
       ],
       "status": "Solicitado"
     }
